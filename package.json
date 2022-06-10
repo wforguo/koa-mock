@@ -1,0 +1,51 @@
+{
+    "name": "koa-mock",
+    "version": "1.0.0",
+    "private": false,
+    "description": "koa-moc",
+    "keywords": [
+        "koa2",
+        "mockjs",
+        "koa-mock"
+    ],
+    "author": {
+        "name": "forguo",
+        "email": "wforguo@gmail.com"
+    },
+    "scripts": {
+        "dev": "nodemon --ignore tests/ --watch src -e ts,tsx --exec ts-node src/bin/www",
+        "build-ts": "tsc",
+        "start": "npm run dev"
+    },
+    "dependencies": {
+        "debug": "^4.1.1",
+        "ip": "^1.1.5",
+        "koa": "^2.7.0",
+        "koa-body": "^5.0.0",
+        "koa-bodyparser": "^4.2.1",
+        "koa-convert": "^1.2.0",
+        "koa-json": "^2.0.2",
+        "koa-logger": "^3.2.0",
+        "koa-onerror": "^4.1.0",
+        "koa-router": "^7.4.0",
+        "koa-static": "^5.0.0",
+        "koa-views": "^6.2.0",
+        "log4js": "^6.5.2",
+        "mockjs": "^1.1.0",
+        "pug": "^2.0.3"
+    },
+    "devDependencies": {
+        "@types/koa": "^2.13.4",
+        "@types/koa-router": "^7.4.4",
+        "cz-conventional-changelog": "^3.3.0",
+        "nodemon": "^1.19.4",
+        "ts-node": "^10.8.1",
+        "tslint": "^6.1.3",
+        "typescript": "^4.7.3"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-conventional-changelog"
+        }
+    }
+}
